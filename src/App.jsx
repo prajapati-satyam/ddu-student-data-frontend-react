@@ -22,7 +22,7 @@ const fetch_data = async()=> {
     method: "POST",
         headers: {
             'Content-Type': 'application/json',
-            'x-api-key': import.meta.env.VITE_KEY
+            // 'x-api-key': import.meta.env.VITE_KEY
         },
         body: JSON.stringify({rollNumber: rollnumber})
   });
