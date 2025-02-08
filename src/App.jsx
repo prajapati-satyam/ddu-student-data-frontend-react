@@ -18,7 +18,7 @@ const App = () => {
 const fetch_data = async()=> {
   setData({});
   setLoading(true);
-  let a = await fetch(import.meta.env.VITE_URL, {
+  let a = await fetch(`${import.meta.env.VITE_URL}rollnumber`, {
     method: "POST",
         headers: {
             'Content-Type': 'application/json',
