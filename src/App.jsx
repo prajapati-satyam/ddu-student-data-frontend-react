@@ -19,12 +19,7 @@ const fetch_data = async()=> {
   setData({});
   setLoading(true);
   let a = await fetch(`${import.meta.env.VITE_URL}${rollnumber}`, {
-    method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-            // 'x-api-key': import.meta.env.VITE_KEY
-        },
-        body: JSON.stringify({rollNumber: rollnumber})
+    method: "GET",
   });
   let b = await a.json();
   setData(b);
