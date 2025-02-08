@@ -82,9 +82,9 @@ const handleKeyPress = (e) => {
     <div className="main flex justify-center relative top-24">
 
       <div className="card flex-col bg-gray-700 p-2 text-green-400 rounded-md w-1/2 sm:w-3/4 mx-5 my-5">
-          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data && student_data.find.name ? `Name : ${student_data.find.name}` : 'waiting for input'}</div>
-          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data && student_data.find.rollNumber ? `Roll Number : ${student_data.find.rollNumber}` : 'waiting for input'}</div>
-          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data && student_data.find.id ? `ID : ${student_data.find.id}` : 'waiting for input'}</div>
+          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data.name && student_data.name ? `Name : ${student_data.find.name}` : 'waiting for input'}</div>
+          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data.rollnumber && student_data.rollnumber ? `Roll Number : ${student_data.find.rollNumber}` : 'waiting for input'}</div>
+          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data.id && student_data.id ? `ID : ${student_data.find.id}` : 'waiting for input'}</div>
       </div>
 
     </div>
