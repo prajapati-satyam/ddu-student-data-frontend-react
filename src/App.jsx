@@ -83,7 +83,7 @@ const handleKeyPress = (e) => {
 
       <div className="card flex-col bg-gray-700 p-2 text-green-400 rounded-md w-1/2 sm:w-3/4 mx-5 my-5">
           <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data && student_data.name ? `Name : ${student_data.name}` : 'waiting for input'}</div>
-          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data && student_data.rollnumber ? `Roll Number : ${student_data.rollNumber}` : 'waiting for input'}</div>
+          <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data && student_data.rollnumber ? `Roll Number : ${student_data.rollnumber}` : 'waiting for input'}</div>
           <div className="flex-item mx-2 my-2 capitalize">{loading ? 'fetching data ...' : student_data && student_data.id ? `ID : ${student_data.id}` : 'waiting for input'}</div>
       </div>
 
